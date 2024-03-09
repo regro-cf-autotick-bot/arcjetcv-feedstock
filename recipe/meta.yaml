@@ -1,5 +1,5 @@
 {% set name = "arcjetCV" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/magnus-haw/arcjetCV/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 51c803ce25d70a7c2155c02904aab9ef065d06f8fba17af3e9bd36318e0db0e4
+  sha256: 68c324f224a054b4a995b81291df6242666269a63da538a8b8c4075fc89776f9
 
 build:
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -42,6 +42,7 @@ requirements:
     - scikit-learn
     - segmentation-models-pytorch
     - torchvision
+    - ocl-icd-system
 
 test:
   imports:
