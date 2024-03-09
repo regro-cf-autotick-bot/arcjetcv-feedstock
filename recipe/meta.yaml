@@ -42,7 +42,7 @@ requirements:
     - scikit-learn
     - segmentation-models-pytorch
     - torchvision
-    - ocl-icd-system
+    - ocl-icd-system  # [linux]
 
 test:
   imports:
