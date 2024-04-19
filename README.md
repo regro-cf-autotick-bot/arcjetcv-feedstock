@@ -233,4 +233,5 @@ Feedstock Maintainers
 =====================
 
 * [@fsemerar](https://github.com/fsemerar/)
+* [@magnus-haw](https://github.com/magnus-haw/)
 

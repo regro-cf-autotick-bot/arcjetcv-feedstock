@@ -1,5 +1,5 @@
 {% set name = "arcjetCV" %}
-{% set version = "0.0.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/magnus-haw/arcjetCV/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 68c324f224a054b4a995b81291df6242666269a63da538a8b8c4075fc89776f9
+  sha256: feb62e8c3d228f15008925b5dbf59c9617408056b0059ceeff2bb88497d5f9b1
 
 build:
   skip: true  # [win]
@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
