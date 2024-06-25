@@ -268,6 +268,6 @@ Feedstock Maintainers
 =====================
 
 * [@alexandrequ](https://github.com/alexandrequ/)
-* [@fsemerar](https://github.com/fsemerar/)
+* [@fedesemeraro](https://github.com/fedesemeraro/)
 * [@magnus-haw](https://github.com/magnus-haw/)
 
