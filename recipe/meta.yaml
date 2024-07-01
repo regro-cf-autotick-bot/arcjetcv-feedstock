@@ -12,7 +12,7 @@ source:
 build:
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -36,7 +36,6 @@ requirements:
     - qt-main
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - pytorch
     - pyside6
     - opencv
